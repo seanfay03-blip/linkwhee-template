@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent vertical scrolling on mobile */
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+@keyframes spinIn {
+  0% {
+    transform: rotate(0deg) translateX(400px) rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(180deg) translateX(0) rotate(-180deg) scale(1);
+    opacity: 1;
+  }
+}
